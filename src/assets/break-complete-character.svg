@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="40" fill="#ffb8c6"/>
+  <circle cx="50" cy="50" r="35" fill="#ffd3db"/>
+  
+  <!-- Happy Eyes -->
+  <path d="M30 40 Q35 30 40 40" stroke="#333" stroke-width="3" fill="none"/>
+  <path d="M60 40 Q65 30 70 40" stroke="#333" stroke-width="3" fill="none"/>
+  
+  <!-- Happy Expression -->
+  <path d="M30 60 Q50 80 70 60" stroke="#333" stroke-width="3" fill="none"/>
+  
+  <!-- Work Tool -->
+  <rect x="30" y="15" width="40" height="25" rx="5" fill="#78c6f7"/>
+  <rect x="35" y="25" width="30" height="3" rx="1" fill="white"/>
+  <rect x="35" y="30" width="15" height="3" rx="1" fill="white"/>
+</svg>

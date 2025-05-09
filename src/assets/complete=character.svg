@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="40" fill="#78c6f7"/>
+  <circle cx="50" cy="50" r="35" fill="#a5d8ff"/>
+  
+  <!-- Happy Eyes -->
+  <path d="M30 40 Q35 30 40 40" stroke="#333" stroke-width="3" fill="none"/>
+  <path d="M60 40 Q65 30 70 40" stroke="#333" stroke-width="3" fill="none"/>
+  
+  <!-- Happy Expression -->
+  <path d="M30 60 Q50 80 70 60" stroke="#333" stroke-width="3" fill="none"/>
+  
+  <!-- Party Hat -->
+  <path d="M50 10 L30 50 L70 50 Z" fill="#ffb8c6"/>
+  <path d="M30 50 L70 50" stroke="#333" stroke-width="2"/>
+  <circle cx="50" cy="20" r="5" fill="#ffea00"/>
+</svg>

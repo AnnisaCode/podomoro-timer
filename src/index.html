@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cute Pomodoro Timer</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <!-- Start Screen -->
+  <div id="start-screen" class="screen active">
+    <div class="container">
+      <div class="app-title">
+        <h1>Cute Pomodoro</h1>
+        <div class="app-icon">
+          <img src="./assets/tomato.svg" alt="Tomato Icon" id="tomato-icon">
+        </div>
+      </div>
+      <button id="start-btn" class="btn primary-btn">Start</button>
+    </div>
+  </div>
+
+  <!-- Options Screen -->
+  <div id="options-screen" class="screen">
+    <div class="container">
+      <h2>Choose Your Session</h2>
+      <div class="sessions-container">
+        <div class="session-option" data-sessions="1">
+          <div class="session-bubble">1</div>
+          <p>Single Session</p>
+          <span class="description">20 minutes</span>
+        </div>
+        <div class="session-option" data-sessions="2">
+          <div class="session-bubble">2</div>
+          <p>Double Session</p>
+          <span class="description">2 x 20 min with breaks</span>
+        </div>
+        <div class="session-option" data-sessions="3">
+          <div class="session-bubble">3</div>
+          <p>Triple Session</p>
+          <span class="description">3 x 20 min with breaks</span>
+        </div>
+        <div class="session-option" data-sessions="4">
+          <div class="session-bubble">4</div>
+          <p>Quad Session</p>
+          <span class="description">4 x 20 min with breaks</span>
+        </div>
+      </div>
+
+      <div class="break-option">
+        <label class="checkbox-container">
+          Include 5 minute breaks between sessions
+          <input type="checkbox" id="break-checkbox" checked>
+          <span class="checkmark"></span>
+        </label>
+      </div>
+
+      <button id="start-timer-btn" class="btn primary-btn">Start Timer</button>
+      <button id="back-to-start-btn" class="btn secondary-btn">Back</button>
+    </div>
+  </div>
+
+  <!-- Timer Screen -->
+  <div id="timer-screen" class="screen">
+    <div class="container">
+      <div class="timer-info">
+        <h2 id="timer-title">Work Time</h2>
+        <div class="session-indicator">
+          <span id="current-session">1</span>/<span id="total-sessions">4</span>
+        </div>
+      </div>
+
+      <div class="timer-container">
+        <div class="timer-circle">
+          <div class="timer-progress" id="timer-progress"></div>
+          <div class="timer-display">
+            <span id="minutes">20</span>:<span id="seconds">00</span>
+          </div>
+        </div>
+
+        <div class="timer-animation">
+          <div id="timer-character"></div>
+        </div>
+      </div>
+
+      <div class="timer-controls">
+        <button id="pause-timer-btn" class="btn action-btn">Pause</button>
+        <button id="stop-timer-btn" class="btn danger-btn">Stop</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Timer Complete Screen -->
+  <div id="complete-screen" class="screen">
+    <div class="container">
+      <div class="complete-animation">
+        <div id="complete-character"></div>
+      </div>
+      <h2 id="complete-message">Time's Up!</h2>
+      <div class="complete-controls">
+        <button id="snooze-btn" class="btn action-btn">Snooze (5 min)</button>
+        <button id="complete-stop-btn" class="btn primary-btn">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <audio id="work-complete-sound" src="./assets/work-complete.mp3"></audio>
+  <audio id="break-complete-sound" src="./assets/break-complete.mp3"></audio>
+
+  <script src="./renderer.js"></script>
+</body>
+
+</html>
